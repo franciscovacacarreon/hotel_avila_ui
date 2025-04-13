@@ -1,7 +1,6 @@
 {
   "name": "varaus",
   "version": "0.1.0",
-  "homepage": "https://franciscovacacarreon.github.io/hotel_avila_ui/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
