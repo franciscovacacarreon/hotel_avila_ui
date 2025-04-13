@@ -3,68 +3,65 @@ import { Collapse, CardBody, Card } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import './style.css';
 
+// Menú traducido
 const menus = [
     {
         id: 1,
-        title: 'Home',
+        title: 'Inicio',
         link: '/home',
         submenu: [
             {
                 id: 11,
-                title: 'Home style 1',
+                title: 'Estilo de Inicio 1',
                 link: '/home'
             },
-            {
-                id: 12,
-                title: 'Home style 2',
-                link: '/home2'
-            },
-            {
-                id: 13,
-                title: 'Home style 3',
-                link: '/home3'
-            },
+            // {
+            //     id: 12,
+            //     title: 'Estilo de Inicio 2',
+            //     link: '/home2'
+            // },
+            // {
+            //     id: 13,
+            //     title: 'Estilo de Inicio 3',
+            //     link: '/home3'
+            // },
         ]
     },
-
-
-
     {
         id: 2,
-        title: 'Room',
+        title: 'Habitaciones',
         link: '/room',
         submenu: [
             {
                 id: 21,
-                title: 'Room',
+                title: 'Habitaciones',
                 link: '/room'
             },
             {
                 id: 22,
-                title: 'Room Single',
+                title: 'Habitación Individual',
                 link: '/room-single'
             }
         ]
     },
-    {
-        id: 9,
-        title: 'Destination',
-        link: '/destination',
-    },
-
+    // {
+    //     id: 9,
+    //     title: 'Destinos',
+    //     link: '/destination',
+    // },
     {
         id: 7,
-        title: 'Pages',
+        title: 'Páginas',
         link: '/',
         submenu: [
             {
                 id: 71,
-                title: 'About',
+                title: 'Acerca de',
                 link: '/about'
             },
             {
                 id: 75,
-                title: 'FAQ',
+                title: 'Preguntas Frecuentes',
                 link: '/faq'
             },
             {
@@ -74,97 +71,91 @@ const menus = [
             },
             {
                 id: 87,
-                title: 'Shop Page',
+                title: 'Tienda',
                 link: '/shop'
             },
             {
                 id: 88,
-                title: 'Shop Single Page',
+                title: 'Detalle de Producto',
                 link: '/shop-single'
             },
             {
                 id: 80,
-                title: 'Login Page',
+                title: 'Iniciar Sesión',
                 link: '/404'
             },
             {
                 id: 81,
-                title: 'Signup Page',
+                title: 'Registrarse',
                 link: '/signup'
             },
             {
                 id: 82,
-                title: 'Forgot Password',
+                title: 'Recuperar Contraseña',
                 link: '/forgot-password'
             },
-
         ]
     },
-
     {
         id: 3,
-        title: 'Service',
+        title: 'Servicios',
         link: '/service',
         submenu: [
             {
                 id: 31,
-                title: 'Service',
+                title: 'Servicios',
                 link: '/service'
             },
             {
                 id: 32,
-                title: 'Service Single',
+                title: 'Detalle del Servicio',
                 link: '/service-single'
             }
         ]
     },
-
-    {
-        id: 5,
-        title: 'Blog',
-        link: '/blog',
-        submenu: [
-            {
-                id: 51,
-                title: 'Blog',
-                link: '/blog'
-            },
-            {
-                id: 52,
-                title: 'Blog Left sidebar',
-                link: '/blog-left'
-            },
-            {
-                id: 53,
-                title: 'Blog full width',
-                link: '/blog-fullwidth'
-            },
-            {
-                id: 54,
-                title: 'Blog single',
-                link: '/blog-details'
-            },
-            {
-                id: 55,
-                title: 'Blog single Left sidebar',
-                link: '/blog-details-left'
-            },
-            {
-                id: 56,
-                title: 'Blog single Left sidebar',
-                link: '/blog-details-fullwidth'
-            },
-        ]
-    },
+    // {
+    //     id: 5,
+    //     title: 'Blog',
+    //     link: '/blog',
+    //     submenu: [
+    //         {
+    //             id: 51,
+    //             title: 'Blog',
+    //             link: '/blog'
+    //         },
+    //         {
+    //             id: 52,
+    //             title: 'Blog con Barra Izquierda',
+    //             link: '/blog-left'
+    //         },
+    //         {
+    //             id: 53,
+    //             title: 'Blog de Ancho Completo',
+    //             link: '/blog-fullwidth'
+    //         },
+    //         {
+    //             id: 54,
+    //             title: 'Entrada de Blog',
+    //             link: '/blog-details'
+    //         },
+    //         {
+    //             id: 55,
+    //             title: 'Entrada con Barra Izquierda',
+    //             link: '/blog-details-left'
+    //         },
+    //         {
+    //             id: 56,
+    //             title: 'Entrada de Ancho Completo',
+    //             link: '/blog-details-fullwidth'
+    //         },
+    //     ]
+    // },
     {
         id: 88,
-        title: 'Contact',
+        title: 'Contacto',
         link: '/contact',
     }
-
-
 ]
-
 
 export default class MobileMenu extends Component {
 
@@ -173,12 +164,14 @@ export default class MobileMenu extends Component {
         isOpen: 0,
     }
 
+    // Manejador para mostrar u ocultar el menú
     menuHandler = () => {
         this.setState({
             isMenuShow: !this.state.isMenuShow
         })
     }
 
+    // Manejador para abrir/cerrar submenús
     setIsOpen = id => () => {
         this.setState({
             isOpen: id === this.state.isOpen ? 0 : id
@@ -186,7 +179,6 @@ export default class MobileMenu extends Component {
     }
 
     render() {
-
         const { isMenuShow, isOpen } = this.state;
 
         const ClickHandler = () => {
@@ -196,37 +188,48 @@ export default class MobileMenu extends Component {
         return (
             <div>
                 <div className={`mobileMenu ${isMenuShow ? 'show' : ''}`}>
-                    {/* <div className="clox" onClick={this.menuHandler}>Close Me</div> */}
+                    {/* Menú lateral para dispositivos móviles */}
 
                     <ul className="responsivemenu">
                         {menus.map(item => {
                             return (
                                 <li key={item.id}>
-                                    {item.submenu ? <p onClick={this.setIsOpen(item.id)}>
-                                        {item.title}
-                                        {item.submenu ? <i className="fa fa-angle-right" aria-hidden="true"></i> : ''}
-                                    </p> : <Link to={item.link}>{item.title}</Link>}
-                                    {item.submenu ?
+                                    {item.submenu ? (
+                                        <p onClick={this.setIsOpen(item.id)}>
+                                            {item.title}
+                                            {item.submenu && <i className="fa fa-angle-right" aria-hidden="true"></i>}
+                                        </p>
+                                    ) : (
+                                        <Link to={item.link}>{item.title}</Link>
+                                    )}
+
+                                    {item.submenu && (
                                         <Collapse isOpen={item.id === isOpen}>
                                             <Card>
                                                 <CardBody>
                                                     <ul>
                                                         {item.submenu.map(submenu => (
-                                                            <li key={submenu.id}><Link onClick={ClickHandler} className="active" to={submenu.link}>{submenu.title}</Link></li>
+                                                            <li key={submenu.id}>
+                                                                <Link onClick={ClickHandler} className="active" to={submenu.link}>
+                                                                    {submenu.title}
+                                                                </Link>
+                                                            </li>
                                                         ))}
                                                     </ul>
                                                 </CardBody>
                                             </Card>
                                         </Collapse>
-                                        : ''}
+                                    )}
                                 </li>
                             )
                         })}
                     </ul>
-
                 </div>
 
-                <div className="showmenu" onClick={this.menuHandler}><i className="fa fa-bars" aria-hidden="true"></i></div>
+                {/* Botón para abrir el menú */}
+                <div className="showmenu" style={{ marginTop: "55px" }} onClick={this.menuHandler}>
+                    <i className="fa fa-bars" aria-hidden="true"></i>
+                </div>
             </div>
         )
     }

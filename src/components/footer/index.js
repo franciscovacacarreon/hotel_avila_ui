@@ -49,8 +49,8 @@ const Footer = (props) => {
                                     <p>Tienda en línea con muchas funciones geniales y exclusivas</p>
                                     <div className="contact-ft">
                                         <ul>
-                                            <li><i className="fi ti-location-pin"></i>Calle 28, Ciudad de Nueva York, EE.UU.</li>
-                                            <li><i className="fi ti-mobile"></i>+000123456789</li>
+                                            <li><i className="fi ti-location-pin"></i>Calle Punata Frente a Rokola "Los Tajibos"</li>
+                                            <li><i className="fi ti-mobile"></i>+59167540196</li>
                                             <li><i className="fi flaticon-email"></i>varaus@gmail.com</li>
                                         </ul>
                                     </div>
