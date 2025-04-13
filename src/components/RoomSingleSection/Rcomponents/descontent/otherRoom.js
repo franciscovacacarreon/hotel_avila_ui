@@ -1,65 +1,62 @@
-
 import React from "react";
-import {Link} from 'react-router-dom'
-import rm1 from '../../../../images/room/img-1.jpg'
-import rm2 from '../../../../images/room/img-2.jpg'
-import rm3 from '../../../../images/room/img-3.jpg'
+import { Link } from 'react-router-dom';
+import rm1 from '../../../../images/room/img-1.jpg';
+import rm2 from '../../../../images/room/img-2.jpg';
+import rm3 from '../../../../images/room/img-3.jpg';
 
-const OtherRoom = (props) => {
+const OtrasHabitaciones = (props) => {
 
-    const Room = [
-
+    const habitaciones = [
         {
-            RoomImg:rm1,
-            RoomHeading:"Lake view Room",
-            RoomCount:'Twin Room',
-            Des:"If you are going to use a passage Lorem Ipsum, you need",
-            Price:"$142",
-            Link:"/room-single",
+            imagenHabitacion: rm1,
+            tituloHabitacion: "Habitación con vista al lago",
+            tipoHabitacion: 'Habitación doble',
+            descripcion: "Si vas a utilizar un pasaje de Lorem Ipsum, lo necesitas.",
+            precio: "$142",
+            enlace: "/room-single",
         },
         {
-            RoomImg:rm2,
-            RoomHeading:"Queen Room Balcony",
-            RoomCount:'Twin Room',
-            Des:"If you are going to use a passage Lorem Ipsum, you need.",
-            Price:"$142",
-            Link:"/room-single",
+            imagenHabitacion: rm2,
+            tituloHabitacion: "Habitación Queen con balcón",
+            tipoHabitacion: 'Habitación doble',
+            descripcion: "Si vas a utilizar un pasaje de Lorem Ipsum, lo necesitas.",
+            precio: "$142",
+            enlace: "/room-single",
         },
         {
-            RoomImg:rm3,
-            RoomHeading:"Apartment",
-            RoomCount:'Twin Room',
-            Des:"If you are going to use a passage Lorem Ipsum, you need.",
-            Price:"$142",
-            Link:"/room-single",
+            imagenHabitacion: rm3,
+            tituloHabitacion: "Apartamento",
+            tipoHabitacion: 'Habitación doble',
+            descripcion: "Si vas a utilizar un pasaje de Lorem Ipsum, lo necesitas.",
+            precio: "$142",
+            enlace: "/room-single",
         },
+    ];
 
-    ]
-
-    return(
-        <div className="other-room">
-            <div className="Room-section">
+    return (
+        <div className="otras-habitaciones">
+            <div className="seccion-habitaciones">
                 <div className="container">
                     <div className="col-12">
-                        <div className="room-title">
-                            <h2>Other Rooms</h2>
+                        <div className="titulo-habitacion">
+                            <h2>Otras Habitaciones</h2>
                         </div>
                         <div className="row">
-                            <div className="col col-xs-12 sortable-gallery">
-                                <div className="gallery-container">
-                                    {Room.map((room, rm) => (
-                                        <div className="grid" key={rm}> 
-                                            <div className="room-item">
-                                                <img src={room.RoomImg} alt="" className="img img-responsive"/>
-                                                <div className="room-text-show">
-                                                    <h2>{room.RoomHeading}</h2>
+                            <div className="col col-xs-12 galeria-clasificable">
+                                <div className="contenedor-galeria">
+                                    {habitaciones.map((habitacion, index) => (
+                                        <div className="grid" key={index}> 
+                                            <div className="item-habitacion">
+                                                <img src={habitacion.imagenHabitacion} alt="" className="img img-responsive"/>
+                                                <div className="texto-habitacion-mostrar">
+                                                    <h2>{habitacion.tituloHabitacion}</h2>
                                                 </div>
-                                                <div className="room-text-hide">
-                                                    <h2>{room.RoomHeading}</h2>
-                                                    <span>{room.RoomCount}</span>
-                                                    <p>{room.Des}</p>
-                                                    <small>From: <span>{room.Price}</span> / Night</small>
-                                                    <Link className="theme-btn-s2" to={room.Link}>Check Availability</Link>
+                                                <div className="texto-habitacion-oculto">
+                                                    <h2>{habitacion.tituloHabitacion}</h2>
+                                                    <span>{habitacion.tipoHabitacion}</span>
+                                                    <p>{habitacion.descripcion}</p>
+                                                    <small>Desde: <span>{habitacion.precio}</span> / Noche</small>
+                                                    <Link className="boton-tema" to={habitacion.enlace}>Ver disponibilidad</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -71,7 +68,7 @@ const OtherRoom = (props) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default OtherRoom;
+export default OtrasHabitaciones;

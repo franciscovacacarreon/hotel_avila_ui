@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/logo-residencial.png'
 import ft1 from '../../images/footer/img-1.jpg'
 import ft2 from '../../images/footer/img-2.jpg'
 import './style.css'
@@ -22,8 +22,9 @@ const Footer = (props) => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 custom-grid">
-                                <div className="logo widget-title">
+                                <div className="logo widget-title d-flex align-items-center">
                                     <img src={Logo} alt="logo" />
+                                    <span className="logo-text" style={{color: "white"}}>Avila</span>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 custom-grid">
@@ -40,32 +41,32 @@ const Footer = (props) => {
                 <div className="footer-middle">
                     <div className="container">
                         <div className="row">
-                            <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div className="widget market-widget wpo-service-link-widget">
                                     <div className="widget-title">
-                                        <h3>Contact </h3>
+                                        <h3>Contacto</h3>
                                     </div>
-                                    <p>online store with lots of cool and exclusive features</p>
+                                    <p>Tienda en línea con muchas funciones geniales y exclusivas</p>
                                     <div className="contact-ft">
                                         <ul>
-                                            <li><i className="fi ti-location-pin"></i>28 Street, New York City, USA</li>
+                                            <li><i className="fi ti-location-pin"></i>Calle 28, Ciudad de Nueva York, EE.UU.</li>
                                             <li><i className="fi ti-mobile"></i>+000123456789</li>
                                             <li><i className="fi flaticon-email"></i>varaus@gmail.com</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            {/* <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                                 <div className="widget link-widget resource-widget">
                                     <div className="widget-title">
-                                        <h3>Destination</h3>
+                                        <h3>Destino</h3>
                                     </div>
                                     <div className="news-wrap">
                                         <div className="news-img">
                                             <img src={ft1} alt="" />
                                         </div>
                                         <div className="news-text">
-                                            <h3>Paris, France</h3>
+                                            <h3>París, Francia</h3>
                                             <span>11 Jun 2020 - 22 Jun 2020</span>
                                             <h2>$835</h2>
                                         </div>
@@ -81,32 +82,32 @@ const Footer = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            </div> */}
+                            <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div className="widget link-widget">
                                     <div className="widget-title">
-                                        <h3>Useful Links</h3>
+                                        <h3>Enlaces Útiles</h3>
                                     </div>
                                     <ul>
-                                        <li><Link onClick={ClickHandler} to="/about">About Us</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/room">Our Offers</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/service">How Spread</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/contact">Contact Us</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/service-single">Our Event</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/about">Sobre Nosotros</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/room">Nuestras Ofertas</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/service">Cómo nos expandimos</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/contact">Contáctanos</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/service-single">Nuestro Evento</Link></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div className="widget newsletter-widget">
                                     <div className="widget-title">
-                                        <h3>Newsletter</h3>
+                                        <h3>Boletín</h3>
                                     </div>
                                     <form onSubmit={SubmitHandler}>
                                         <div className="input-1">
-                                            <input type="email" className="form-control" placeholder="Email Address *" required="" />
+                                            <input type="email" className="form-control" placeholder="Dirección de correo *" required="" />
                                         </div>
                                         <div className="submit clearfix">
-                                            <button type="submit">subscribe<i className="ti-angle-right"></i></button>
+                                            <button type="submit">Suscribirse<i className="ti-angle-right"></i></button>
                                         </div>
                                     </form>
                                 </div>
@@ -122,14 +123,14 @@ const Footer = (props) => {
                         <div className="col col-lg-6 col-md-6 col-12">
                             <div className="term">
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/">Privecy Policy</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/">Terms & Condition</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/">Política de Privacidad</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/">Términos y Condiciones</Link></li>
                                     <li><Link onClick={ClickHandler} to="/">Cookies</Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col col-lg-6 col-md-6 col-12">
-                            <p className="copyright">&copy; 2021 Varaus. All rights reserved</p>
+                            <p className="copyright">&copy; 2025 IntiCode. Todos los derechos reservados</p>
                         </div>
                     </div>
                 </div>

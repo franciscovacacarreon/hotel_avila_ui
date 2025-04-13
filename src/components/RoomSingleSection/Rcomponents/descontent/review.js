@@ -1,4 +1,3 @@
-
 import React from "react";
 import rmd1 from '../../../../images/room/r1.jpg'
 import rmd2 from '../../../../images/room/r2.jpg'
@@ -8,7 +7,7 @@ const Review = (props) => {
     return(
         <div className="room-review">
             <div className="room-title">
-                <h2>Room Reviews</h2>
+                <h2>Reseñas de la habitación</h2>
             </div>
             <div className="review-item">
                 <div className="review-img">
@@ -16,7 +15,7 @@ const Review = (props) => {
                 </div>
                 <div className="review-text">
                     <div className="r-title">
-                        <h2>Marry Watson</h2>
+                        <h2>María Watson</h2>
                         <ul>
                             <li><i className="fi flaticon-star"></i></li>
                             <li><i className="fi flaticon-star"></i></li>
@@ -25,7 +24,7 @@ const Review = (props) => {
                             <li><i className="fi flaticon-star"></i></li>
                         </ul>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <p>La habitación fue increíble. El servicio fue excelente, el lugar estaba muy limpio y el ambiente era acogedor. Sin duda, volvería a quedarme aquí.</p>
                 </div>
             </div>
             <div className="review-item">
@@ -43,7 +42,7 @@ const Review = (props) => {
                             <li><i className="fi flaticon-star"></i></li>
                         </ul>
                     </div>
-                    <p> Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <p>El lugar tiene todo lo que necesitas para una estancia cómoda. El personal fue amable y la habitación estuvo a la altura de nuestras expectativas. Muy recomendable.</p>
                 </div>
             </div>
      </div>

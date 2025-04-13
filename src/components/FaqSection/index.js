@@ -20,7 +20,7 @@ const FaqSection = () => {
                     <div className="col-12">
                         <div className="section-title">
                             <span>FAQ</span>
-                            <h2>Frequently Asked Question</h2>
+                            <h2>Preguntas Frecuentes</h2>
                         </div>
                     </div>
                 </div>
@@ -32,11 +32,11 @@ const FaqSection = () => {
                                 aria-controls="panel1bh-content"
                                 id="panel1bh-header"
                             >
-                                <Typography>The divorce process: filing the paperwork and timescales</Typography>
+                                <Typography>¿Cuáles son los horarios de check-in y check-out?</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    Pellentesque sit tortor eu proin at commodo. Penatibus eu sed at tincidunt fermentum id nulla sed. Et nunc massa nam fringilla. In eros, proin purus, auctor arcu ultricies elit semper lobortis. Amet vel faucibus risus eget ante lectus faucibus.
+                                    El check-in se realiza a partir de las 14:00 horas y el check-out hasta las 11:00 horas. Si necesita ingresar antes o salir más tarde, contáctenos con anticipación para verificar disponibilidad.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -46,11 +46,11 @@ const FaqSection = () => {
                                 aria-controls="panel2bh-content"
                                 id="panel2bh-header"
                             >
-                                <Typography>What to expect from the first meeting with your solicitor?</Typography>
+                                <Typography>¿Se permite cancelar o modificar una reserva?</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    Pellentesque sit tortor eu proin at commodo. Penatibus eu sed at tincidunt fermentum id nulla sed. Et nunc massa nam fringilla. In eros, proin purus, auctor arcu ultricies elit semper lobortis. Amet vel faucibus risus eget ante lectus faucibus.
+                                    Sí, puede cancelar o modificar su reserva hasta 48 horas antes del día de ingreso sin costo adicional. Después de ese plazo, podría aplicarse una penalización.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -60,12 +60,11 @@ const FaqSection = () => {
                                 aria-controls="panel3bh-content"
                                 id="panel3bh-header"
                             >
-                                <Typography> Who will work on my case?</Typography>
-
+                                <Typography>¿El hotel incluye desayuno?</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    Pellentesque sit tortor eu proin at commodo. Penatibus eu sed at tincidunt fermentum id nulla sed. Et nunc massa nam fringilla. In eros, proin purus, auctor arcu ultricies elit semper lobortis. Amet vel faucibus risus eget ante lectus faucibus.
+                                    Sí, todas nuestras tarifas incluyen desayuno continental, servido en el comedor del hotel de 7:00 a 10:00 horas.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -75,11 +74,11 @@ const FaqSection = () => {
                                 aria-controls="panel4bh-content"
                                 id="panel5bh-header"
                             >
-                                <Typography> Does it matter how long I wait to file a lawsuit?</Typography>
+                                <Typography>¿Se aceptan mascotas?</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    Pellentesque sit tortor eu proin at commodo. Penatibus eu sed at tincidunt fermentum id nulla sed. Et nunc massa nam fringilla. In eros, proin purus, auctor arcu ultricies elit semper lobortis. Amet vel faucibus risus eget ante lectus faucibus.
+                                    Lamentablemente, no aceptamos mascotas en nuestras instalaciones, con la excepción de animales de asistencia debidamente certificados.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>

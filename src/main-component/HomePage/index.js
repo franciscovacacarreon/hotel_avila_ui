@@ -24,11 +24,11 @@ const HomePage =() => {
             <Hero heroClass={'hero-style-1'} heroImg1={hero1} heroImg2={hero2} heroImg3={hero3}/>
             <SearchSection/>
             <About/>
-            <Destination/>
+            {/* <Destination/> */}
             <RoomSection/>
             <VideoSection vdImg={vdimg}/>
             <Testimonial/>
-            <BlogSection/>
+            {/* <BlogSection/> */}
             <Footer/> 
             <Scrollbar/>
         </Fragment>

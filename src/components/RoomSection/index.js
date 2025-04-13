@@ -19,63 +19,58 @@ const RoomSection = (props) => {
         if(activeTab !== tab) setActiveTab(tab);
     }
 
-
     const Room = [
-
         {
-            RoomImg:rm1,
-            RoomHeading:"Lake view Room",
-            RoomCount:'Twin Room',
-            Des:"If you are going to use a passage Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-            Price:"$142",
-            Link:"/room-single",
+            RoomImg: rm1,
+            RoomHeading: "Habitación con vista al lago",
+            RoomCount: 'Habitación doble',
+            Des: "Disfrute de una estancia cómoda con todas las comodidades necesarias para su relax y confort.",
+            Price: "$142",
+            Link: "/room-single",
         },
         {
-            RoomImg:rm2,
-            RoomHeading:"Queen Room Balcony",
-            RoomCount:'Twin Room',
-            Des:"If you are going to use a passage Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-            Price:"$142",
-            Link:"/room-single",
+            RoomImg: rm2,
+            RoomHeading: "Habitación Queen con balcón",
+            RoomCount: 'Habitación doble',
+            Des: "Amplia habitación con balcón privado y vistas espectaculares, perfecta para una estancia romántica.",
+            Price: "$142",
+            Link: "/room-single",
         },
         {
-            RoomImg:rm3,
-            RoomHeading:"Apartment",
-            RoomCount:'Twin Room',
-            Des:"If you are going to use a passage Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-            Price:"$142",
-            Link:"/room-single",
+            RoomImg: rm3,
+            RoomHeading: "Apartamento",
+            RoomCount: 'Habitación doble',
+            Des: "Espacio amplio con cocina totalmente equipada, ideal para estancias prolongadas.",
+            Price: "$142",
+            Link: "/room-single",
         },
-
     ]
 
     const Room2 = [
-
         {
-            RoomImg:rm4,
-            RoomHeading:"Lake view Room",
-            RoomCount:'Twin Room',
-            Des:"If you are going to use a passage Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-            Price:"$142",
-            Link:"/room-single",
+            RoomImg: rm4,
+            RoomHeading: "Habitación con vista al lago",
+            RoomCount: 'Habitación doble',
+            Des: "Disfrute de una estancia cómoda con todas las comodidades necesarias para su relax y confort.",
+            Price: "$142",
+            Link: "/room-single",
         },
         {
-            RoomImg:rm5,
-            RoomHeading:"Queen Room Balcony",
-            RoomCount:'Twin Room',
-            Des:"If you are going to use a passage Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-            Price:"$142",
-            Link:"/room-single",
+            RoomImg: rm5,
+            RoomHeading: "Habitación Queen con balcón",
+            RoomCount: 'Habitación doble',
+            Des: "Amplia habitación con balcón privado y vistas espectaculares, perfecta para una estancia romántica.",
+            Price: "$142",
+            Link: "/room-single",
         },
         {
-            RoomImg:rm6,
-            RoomHeading:"Apartment",
-            RoomCount:'Twin Room',
-            Des:"If you are going to use a passage Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-            Price:"$142",
-            Link:"/room-single",
+            RoomImg: rm6,
+            RoomHeading: "Apartamento",
+            RoomCount: 'Habitación doble',
+            Des: "Espacio amplio con cocina totalmente equipada, ideal para estancias prolongadas.",
+            Price: "$142",
+            Link: "/room-single",
         },
-
     ]
 
     return(
@@ -84,8 +79,8 @@ const RoomSection = (props) => {
                 <div className="container">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <span>Our Rooms</span>
-                            <h2>Discover Our Rooms</h2>
+                            <span>Nuestras Habitaciones</span>
+                            <h2>Descubre Nuestras Habitaciones</h2>
                         </div>
                     </div>
                     <div className="row">
@@ -97,7 +92,7 @@ const RoomSection = (props) => {
                                             className={classnames({ active: activeTab === '1' })}
                                             onClick={() => { toggle('1'); }}
                                         >
-                                          Classic
+                                          Clásicas
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
@@ -105,7 +100,7 @@ const RoomSection = (props) => {
                                             className={classnames({ active: activeTab === '2' })}
                                             onClick={() => { toggle('2'); }}
                                         >
-                                            Budget
+                                            Económicas
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
@@ -113,7 +108,7 @@ const RoomSection = (props) => {
                                             className={classnames({ active: activeTab === '3' })}
                                             onClick={() => { toggle('3'); }}
                                         >
-                                            Luxury
+                                            Lujo
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
@@ -121,7 +116,7 @@ const RoomSection = (props) => {
                                             className={classnames({ active: activeTab === '4' })}
                                             onClick={() => { toggle('4'); }}
                                         >
-                                            Double
+                                            Dobles
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
@@ -129,32 +124,31 @@ const RoomSection = (props) => {
                                             className={classnames({ active: activeTab === '5' })}
                                             onClick={() => { toggle('5'); }}
                                         >
-                                            Single
+                                            Individuales
                                         </NavLink>
                                     </NavItem>
-                                    
                                 </Nav>
                             </div>
                             <div className="gallery-container">
                                 <TabContent activeTab={activeTab}>
                                     <TabPane tabId="1">
                                         {Room.map((room, rm) => (
-                                                <div className="grid" key={rm}> 
-                                                    <div className="room-item">
-                                                        <img src={room.RoomImg} alt="" className="img img-responsive"/>
-                                                        <div className="room-text-show">
-                                                            <h2>{room.RoomHeading}</h2>
-                                                        </div>
-                                                        <div className="room-text-hide">
-                                                            <h2>{room.RoomHeading}</h2>
-                                                            <span>{room.RoomCount}</span>
-                                                            <p>{room.Des}</p>
-                                                            <small>From: <span>{room.Price}</span> / Night</small>
-                                                            <Link className="theme-btn-s2" to={room.Link}>Check Availability</Link>
-                                                        </div>
+                                            <div className="grid" key={rm}> 
+                                                <div className="room-item">
+                                                    <img src={room.RoomImg} alt="" className="img img-responsive"/>
+                                                    <div className="room-text-show">
+                                                        <h2>{room.RoomHeading}</h2>
+                                                    </div>
+                                                    <div className="room-text-hide">
+                                                        <h2>{room.RoomHeading}</h2>
+                                                        <span>{room.RoomCount}</span>
+                                                        <p>{room.Des}</p>
+                                                        <small>Desde: <span>{room.Price}</span> / Noche</small>
+                                                        <Link className="theme-btn-s2" to={room.Link}>Consultar Disponibilidad</Link>
                                                     </div>
                                                 </div>
-                                            ))}
+                                            </div>
+                                        ))}
                                     </TabPane>
                                     <TabPane tabId="2">
                                         {Room2.map((room, rm) => (
@@ -168,8 +162,8 @@ const RoomSection = (props) => {
                                                         <h2>{room.RoomHeading}</h2>
                                                         <span>{room.RoomCount}</span>
                                                         <p>{room.Des}</p>
-                                                        <small>From: <span>{room.Price}</span> / Night</small>
-                                                        <Link className="theme-btn-s2" to={room.Link}>Check Availability</Link>
+                                                        <small>Desde: <span>{room.Price}</span> / Noche</small>
+                                                        <Link className="theme-btn-s2" to={room.Link}>Consultar Disponibilidad</Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -177,22 +171,22 @@ const RoomSection = (props) => {
                                     </TabPane>
                                     <TabPane tabId="3">
                                         {Room.map((room, rm) => (
-                                                <div className="grid" key={rm}> 
-                                                    <div className="room-item">
-                                                        <img src={room.RoomImg} alt="" className="img img-responsive"/>
-                                                        <div className="room-text-show">
-                                                            <h2>{room.RoomHeading}</h2>
-                                                        </div>
-                                                        <div className="room-text-hide">
-                                                            <h2>{room.RoomHeading}</h2>
-                                                            <span>{room.RoomCount}</span>
-                                                            <p>{room.Des}</p>
-                                                            <small>From: <span>{room.Price}</span> / Night</small>
-                                                            <Link className="theme-btn-s2" to={room.Link}>Check Availability</Link>
-                                                        </div>
+                                            <div className="grid" key={rm}> 
+                                                <div className="room-item">
+                                                    <img src={room.RoomImg} alt="" className="img img-responsive"/>
+                                                    <div className="room-text-show">
+                                                        <h2>{room.RoomHeading}</h2>
+                                                    </div>
+                                                    <div className="room-text-hide">
+                                                        <h2>{room.RoomHeading}</h2>
+                                                        <span>{room.RoomCount}</span>
+                                                        <p>{room.Des}</p>
+                                                        <small>Desde: <span>{room.Price}</span> / Noche</small>
+                                                        <Link className="theme-btn-s2" to={room.Link}>Consultar Disponibilidad</Link>
                                                     </div>
                                                 </div>
-                                            ))}
+                                            </div>
+                                        ))}
                                     </TabPane>
                                     <TabPane tabId="4">
                                         {Room2.map((room, rm) => (
@@ -206,8 +200,8 @@ const RoomSection = (props) => {
                                                         <h2>{room.RoomHeading}</h2>
                                                         <span>{room.RoomCount}</span>
                                                         <p>{room.Des}</p>
-                                                        <small>From: <span>{room.Price}</span> / Night</small>
-                                                        <Link className="theme-btn-s2" to={room.Link}>Check Availability</Link>
+                                                        <small>Desde: <span>{room.Price}</span> / Noche</small>
+                                                        <Link className="theme-btn-s2" to={room.Link}>Consultar Disponibilidad</Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -215,22 +209,22 @@ const RoomSection = (props) => {
                                     </TabPane>
                                     <TabPane tabId="5">
                                         {Room.map((room, rm) => (
-                                                <div className="grid" key={rm}> 
-                                                    <div className="room-item">
-                                                        <img src={room.RoomImg} alt="" className="img img-responsive"/>
-                                                        <div className="room-text-show">
-                                                            <h2>{room.RoomHeading}</h2>
-                                                        </div>
-                                                        <div className="room-text-hide">
-                                                            <h2>{room.RoomHeading}</h2>
-                                                            <span>{room.RoomCount}</span>
-                                                            <p>{room.Des}</p>
-                                                            <small>From: <span>{room.Price}</span> / Night</small>
-                                                            <Link className="theme-btn-s2" to={room.Link}>Check Availability</Link>
-                                                        </div>
+                                            <div className="grid" key={rm}> 
+                                                <div className="room-item">
+                                                    <img src={room.RoomImg} alt="" className="img img-responsive"/>
+                                                    <div className="room-text-show">
+                                                        <h2>{room.RoomHeading}</h2>
+                                                    </div>
+                                                    <div className="room-text-hide">
+                                                        <h2>{room.RoomHeading}</h2>
+                                                        <span>{room.RoomCount}</span>
+                                                        <p>{room.Des}</p>
+                                                        <small>Desde: <span>{room.Price}</span> / Noche</small>
+                                                        <Link className="theme-btn-s2" to={room.Link}>Consultar Disponibilidad</Link>
                                                     </div>
                                                 </div>
-                                            ))}
+                                            </div>
+                                        ))}
                                     </TabPane>
                                 </TabContent>
                             </div>

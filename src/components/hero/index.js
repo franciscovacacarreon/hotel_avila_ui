@@ -19,7 +19,6 @@ class Hero extends Component {
             fade: true
         };
         return (
-
             <section className={`hero ${this.props.heroClass}`}>
                 <div className="hero-slider">
                     <Slider {...settings}>
@@ -29,13 +28,13 @@ class Hero extends Component {
                                     <div className="row">
                                         <div className="col col-lg-8 col-md-12 col-12 slide-caption">
                                             <div className="slide-title">
-                                                <h2>The Varaus Hotel & Resort</h2>
+                                                <h2>Hotel & Resort Avila</h2>
                                             </div>
                                             <div className="slide-subtitle">
-                                                <p>Make Your Life Better and Bright! You must trip with Us!</p>
+                                                <p>¡Haz tu vida mejor y más brillante! ¡Debes viajar con nosotros!</p>
                                             </div>
                                             <div className="btns">
-                                                <Link to="/room" className="theme-btn">Book A Room</Link>
+                                                <Link to="/room" className="theme-btn">Reservar Habitación</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -48,13 +47,13 @@ class Hero extends Component {
                                     <div className="row">
                                         <div className="col col-lg-8 col-md-12 col-12 slide-caption">
                                             <div className="slide-title">
-                                                <h2>The Varaus Hotel & Resort</h2>
+                                                <h2>Hotel & Resort Varaus</h2>
                                             </div>
                                             <div className="slide-subtitle">
-                                                <p>Make Your Life Better and Bright! You must trip with Us!</p>
+                                                <p>Experiencias inolvidables en el corazón de la naturaleza</p>
                                             </div>
                                             <div className="btns">
-                                                <Link to="/room" className="theme-btn">Book A Room</Link>
+                                                <Link to="/room" className="theme-btn">Reservar Ahora</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -67,13 +66,13 @@ class Hero extends Component {
                                     <div className="row">
                                         <div className="col col-lg-8 col-md-12 col-12 slide-caption">
                                             <div className="slide-title">
-                                                <h2>The Varaus Hotel & Resort</h2>
+                                                <h2>Hotel & Resort Varaus</h2>
                                             </div>
                                             <div className="slide-subtitle">
-                                                <p>Make Your Life Better and Bright! You must trip with Us!</p>
+                                                <p>Lujo y comodidad en un entorno paradisíaco</p>
                                             </div>
                                             <div className="btns">
-                                                <Link to="/room" className="theme-btn">Book A Room</Link>
+                                                <Link to="/room" className="theme-btn">Ver Habitaciones</Link>
                                             </div>
                                         </div>
                                     </div>

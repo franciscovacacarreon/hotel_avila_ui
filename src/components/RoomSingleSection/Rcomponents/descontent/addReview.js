@@ -1,4 +1,3 @@
-
 import React from "react";
 import {Link} from 'react-router-dom'
 
@@ -11,7 +10,7 @@ const AddReview = (props) => {
     return(
         <div className="add-review">
         <div className="room-title">
-            <h2>Add Review</h2>
+            <h2>Agregar Reseña</h2>
         </div>
         <div className="wpo-blog-single-section">
             <div className="review-text">
@@ -29,20 +28,20 @@ const AddReview = (props) => {
                 <div className="comment-respond">
                     <form onSubmit={submitHandler} method="post" id="commentform" className="comment-form">
                         <div className="form-inputs">
-                            <input placeholder="Your Name*" type="text"/>
-                            <input placeholder="Your Email*" type="email"/>
+                            <input placeholder="Tu Nombre*" type="text"/>
+                            <input placeholder="Tu Correo Electrónico*" type="email"/>
                         </div>
                         <div className="form-textarea">
-                            <textarea id="comment" placeholder="Your Review"></textarea>
+                            <textarea id="comment" placeholder="Tu Reseña"></textarea>
                         </div>
                         <div className="form-check">
                             <div className="shipp pb">
                                 <input type="checkbox" id="c2" name="cc"/>
-                                <label htmlFor="c2"><span></span>Save my name, email, and website in this browser for the next time I comment.</label>
+                                <label htmlFor="c2"><span></span>Guardar mi nombre, correo electrónico y sitio web en este navegador para la próxima vez que comente.</label>
                             </div>
                         </div>
                         <div className="form-submit">
-                            <input id="submit" value="Submit Now" type="submit"/>
+                            <input id="submit" value="Enviar Ahora" type="submit"/>
                         </div>
                     </form>
                 </div>

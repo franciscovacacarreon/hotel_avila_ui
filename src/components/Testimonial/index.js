@@ -54,27 +54,27 @@ class Testimonial extends Component {
         const testimonial = [
             {
                 tsImg: ts1,
-                Des: "“The trip was incredible. I got to see so many places I wouldn't have by myself, me and my husband really enjoyed a lot.”",
-                Title:'Benjir Walton',
-                Sub: "Singapore",
+                Des: "“El viaje fue increíble. Conocí muchos lugares a los que no habría ido por mi cuenta, mi esposo y yo lo disfrutamos muchísimo.”",
+                Title: 'Benjir Walton',
+                Sub: "Singapur",
             },
             {
                 tsImg: ts2,
-                Des: "“The trip was incredible. I got to see so many places I wouldn't have by myself, me and my husband really enjoyed a lot.”",
-                Title:'Jenefar Meera',
-                Sub: "Canada",
+                Des: "“El viaje fue increíble. Conocí muchos lugares a los que no habría ido por mi cuenta, mi esposo y yo lo disfrutamos muchísimo.”",
+                Title: 'Jenefar Meera',
+                Sub: "Canadá",
             },
             {
                 tsImg: ts3,
-                Des: "“The trip was incredible. I got to see so many places I wouldn't have by myself, me and my husband really enjoyed a lot.”",
-                Title:'Lily monalisa',
-                Sub: "Singapore",
+                Des: "“El viaje fue increíble. Conocí muchos lugares a los que no habría ido por mi cuenta, mi esposo y yo lo disfrutamos muchísimo.”",
+                Title: 'Lily Monalisa',
+                Sub: "Singapur",
             },
             {
                 tsImg: ts1,
-                Des: "“The trip was incredible. I got to see so many places I wouldn't have by myself, me and my husband really enjoyed a lot.”",
-                Title:'Benjir Walton',
-                Sub: "Singapore",
+                Des: "“El viaje fue increíble. Conocí muchos lugares a los que no habría ido por mi cuenta, mi esposo y yo lo disfrutamos muchísimo.”",
+                Title: 'Benjir Walton',
+                Sub: "Singapur",
             }
         ]
         return (
@@ -82,8 +82,8 @@ class Testimonial extends Component {
                 <div className="container">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <span>What Say Clients</span>
-                            <h2>Our Clients are <br /> Important to Us</h2>
+                            <span>Lo que dicen nuestros clientes</span>
+                            <h2>Nuestros clientes son <br /> muy importantes para nosotros</h2>
                         </div>
                     </div>
                     <div className="row">

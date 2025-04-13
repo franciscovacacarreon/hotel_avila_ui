@@ -1,4 +1,3 @@
-
 import React from "react";
 import {Link} from 'react-router-dom'
 import Pricing from '../Rcomponents/descontent/pricing'
@@ -17,11 +16,11 @@ const Description = (props) => {
                     <div className="col-lg-10">
                         <div className="room-description">
                             <div className="room-title">
-                                <h2>Description</h2>
+                                <h2>Descripción</h2>
                             </div>
-                            <p className="p-wrap">It's difficult to find examples of lorem ipsum in use before Letraset made it popular as a dummy text in the 1960s, although McClintock says he remembers coming across the lorem ipsum passage in a book of old metal type samples.</p>
-                            <p>So when is it okay to use lorem ipsum? First, lorem ipsum works well for staging. It's like the props in a furniture store—filler text makes it look like someone is home. The same Wordpress template might eventually be home to a fitness blog, a photography website, or the online journal of a cupcake fanatic. Lorem ipsum helps them imagine what the lived-in website might look like.</p>
-                            <p>Second, use lorem ipsum if you think the placeholder text will be too distracting. For specific projects, collaboration between copywriters and designers may be best, however, like Karen McGrane said, draft copy has a way of turning any meeting about layout decisions into a discussion about word choice. So don't be afraid to use lorem ipsum to keep everyone focused.</p>
+                            <p className="p-wrap">Nuestra habitación ofrece una experiencia única de comodidad y tranquilidad. Está equipada con todo lo necesario para hacer de tu estancia un momento agradable, tanto si vienes por negocios como por placer.</p>
+                            <p>La habitación está diseñada para brindarte el máximo confort. Desde la temperatura ideal gracias al aire acondicionado, hasta una variedad de amenidades pensadas para tu bienestar, como frutas frescas siempre disponibles y limpieza diaria.</p>
+                            <p>Si deseas relajarte o disfrutar de una buena vista, nuestra habitación cuenta con un balcón privado. Además, tendrás acceso a servicios exclusivos como Wi-Fi gratuito, estacionamiento gratuito y un teléfono inteligente de uso gratuito para tu comodidad.</p>
                         </div>
                         <div className="room-details-service">
                             <div className="row">
@@ -30,16 +29,16 @@ const Description = (props) => {
                                         <div className="col-md-5 col-sm-12 col-12">
                                             <div className="room-d-text">
                                                 <div className="room-title">
-                                                    <h2>Amenities</h2>
+                                                    <h2>Amenidades</h2>
                                                 </div>
                                                 <ul>
-                                                    <li><Link to="/room-single">Refrigerator and water</Link></li>
-                                                    <li><Link to="/room-single">Air Conditioner Facilities</Link></li>
-                                                    <li><Link to="/room-single">Fruits are always available</Link></li>
-                                                    <li><Link to="/room-single">2 Sets of nightwear</Link></li>
-                                                    <li><Link to="/room-single">Tables and Chairs</Link></li>
-                                                    <li><Link to="/room-single">2 Elevator Available</Link></li>
-                                                    <li><Link to="/room-single">Room Side Belcony</Link></li>
+                                                    <li><Link to="/room-single">Refrigerador y agua fresca</Link></li>
+                                                    <li><Link to="/room-single">Aire acondicionado</Link></li>
+                                                    <li><Link to="/room-single">Frutas siempre disponibles</Link></li>
+                                                    <li><Link to="/room-single">2 juegos de ropa de noche</Link></li>
+                                                    <li><Link to="/room-single">Mesas y sillas cómodas</Link></li>
+                                                    <li><Link to="/room-single">2 ascensores disponibles</Link></li>
+                                                    <li><Link to="/room-single">Balcón privado con vista</Link></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -56,16 +55,16 @@ const Description = (props) => {
                                         <div className="col-md-5 col-sm-12 col-12">
                                             <div className="room-d-text2">
                                                 <div className="room-title">
-                                                    <h2>Room Services</h2>
+                                                    <h2>Servicios de la Habitación</h2>
                                                 </div>
                                                 <ul>
-                                                    <li><Link to="/room-single">Daily Cleaning</Link></li>
-                                                    <li><Link to="/room-single">Special Swimming Pool</Link></li>
-                                                    <li><Link to="/room-single">Free Parking</Link></li>
-                                                    <li><Link to="/room-single">Free-to-use smartphone </Link></li>
-                                                    <li><Link to="/room-single">Free Wifi</Link></li>
-                                                    <li><Link to="/room-single">2 Elevator Available</Link></li>
-                                                    <li><Link to="/room-single">Room Side Belcony</Link></li>
+                                                    <li><Link to="/room-single">Limpieza diaria</Link></li>
+                                                    <li><Link to="/room-single">Piscina exclusiva</Link></li>
+                                                    <li><Link to="/room-single">Estacionamiento gratuito</Link></li>
+                                                    <li><Link to="/room-single">Teléfono inteligente de uso gratuito</Link></li>
+                                                    <li><Link to="/room-single">Wi-Fi gratuito</Link></li>
+                                                    <li><Link to="/room-single">2 ascensores disponibles</Link></li>
+                                                    <li><Link to="/room-single">Balcón con vista</Link></li>
                                                 </ul>
                                             </div>
                                         </div>

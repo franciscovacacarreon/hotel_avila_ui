@@ -6,43 +6,43 @@ const Service = (props) => {
 
     const ClickHandler = () =>{
         window.scrollTo(10, 0);
-     }
+    }
       
     const serviceWrap = [
         {
            sIcon:'fi flaticon-tray',
-           title:"Delicious Food",
-           des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', 
+           title:"Comida Deliciosa",
+           des:'Disfrute de una variedad de platos nacionales e internacionales preparados con ingredientes frescos.', 
            link:"/service-single"
         },
         {
            sIcon:'fi flaticon-pool',
-           title:"Swimming Pool",
-           des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',           
+           title:"Piscina",
+           des:'Relájese y disfrute del sol en nuestra piscina al aire libre, ideal para toda la familia.',           
            link:"/service-single"
         },
         {
            sIcon:'fi flaticon-herbal',
-           title:"Spa salon",
-           des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+           title:"Spa y Masajes",
+           des:'Ofrecemos tratamientos de relajación, masajes y servicios de spa para su bienestar.',
            link:"/service-single"
         },
         {
            sIcon:'fi flaticon-bowling',
-           title:"Game Room",
-           des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+           title:"Sala de Juegos",
+           des:'Entretenimiento para grandes y pequeños con juegos de mesa, consolas y más.',
            link:"/service-single"
         },
         {
            sIcon:'fi flaticon-taxi',
-           title:"Airport Taxi",
-           des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+           title:"Transporte al Aeropuerto",
+           des:'Ofrecemos servicio de taxi desde y hacia el aeropuerto para su comodidad.',
            link:"/service-single"
         },
         {
            sIcon:'fi flaticon-bowling',
-           title:"Breakfast",
-           des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+           title:"Desayuno Incluido",
+           des:'Disfrute de un delicioso desayuno continental incluido en su estancia.',
            link:"/service-single"
         },
     ]
@@ -52,8 +52,8 @@ const Service = (props) => {
             <div className="container">
                 <div className="col-12">
                     <div className="wpo-section-title">
-                        <span>Our Services</span>
-                        <h2>What We Offer For You</h2>
+                        <span>Nuestros Servicios</span>
+                        <h2>¿Qué Ofrecemos Para Usted?</h2>
                     </div>
                 </div>
                 <div className="row">

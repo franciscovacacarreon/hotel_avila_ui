@@ -1,37 +1,42 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import ab1 from '../../images/about/about.png'
-import './style.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import ab1 from '../../images/about/about.png';
+import './style.css';
 
 const About = (props) => {
-    const ClickHandler = () =>{
+    const ClickHandler = () => {
         window.scrollTo(10, 0);
-     }
-    return(
+    }
+
+    return (
         <div className="wpo-about-area section-padding">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-7 col-md-12 col-sm-12">
                         <div className="wpo-about-img">
-                            <img src={ab1} alt=""/>
+                            <img src={ab1} alt="Imagen sobre nosotros" />
                         </div>
                     </div>
-                    <div className="col-lg-5 col-md-12 colsm-12">
+                    <div className="col-lg-5 col-md-12 col-sm-12">
                         <div className="wpo-about-text">
                             <div className="wpo-section-title">
-                                <span>About Us</span>
-                                <h2>A Best Place <br/> to Enjoy </h2>
+                                <span>Sobre Nosotros</span>
+                                <h2>El lugar ideal <br /> para relajarte</h2>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <p>
+                                Somos un espacio pensado para brindarte descanso, comodidad y una experiencia única. 
+                                Con instalaciones modernas y un ambiente acogedor, te ofrecemos el equilibrio perfecto 
+                                entre tranquilidad y confort. Ya sea que viajes por placer o negocios, aquí encontrarás todo lo que necesitas.
+                            </p>
                             <div className="btns">
-                                <Link onClick={ClickHandler} to="/about" className="theme-btn-s2">More About Us</Link>
+                                <Link onClick={ClickHandler} to="/about" className="theme-btn-s2">Conoce más</Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default About;

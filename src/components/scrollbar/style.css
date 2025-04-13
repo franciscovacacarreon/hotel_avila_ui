@@ -1,27 +1,31 @@
 ul.smothscroll {
     position: fixed;
     bottom: 25px;
-    right:30px;
+    right: 30px;
     list-style: none;
     z-index: 99;
 }
+
 ul.smothscroll a {
-    background-color: rgba(0, 214, 144, 0.7);
+    background-color: rgba(59, 185, 165, 0.7); /* --mint-green con 70% opacidad */
     width: 45px;
     height: 45px;
     line-height: 45px;
-    border: 2px solid rgb(0, 214, 144);
+    border: 2px solid var(--mint-green); /* Borde con tu color mint-green */
     border-radius: 0;
     display: block;
     text-align: center;
-    color: #fff;
+    color: var(--white); /* Usando tu variable de blanco */
     border-radius: 50%;
-}
-ul.smothscroll a:hover {
-    background-color: rgb(0, 214, 144);
+    transition: all 0.3s ease; /* Agregado para suavizar la transición */
 }
 
-@media(max-width:767px){
+ul.smothscroll a:hover {
+    background-color: var(--deep-teal); /* Cambia a tu deep-teal al hacer hover */
+    border-color: var(--deep-teal); /* Borde también cambia al hacer hover */
+}
+
+@media(max-width: 767px) {
     ul.smothscroll a {
         width: 30px;
         height: 30px;

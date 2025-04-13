@@ -1,3 +1,15 @@
+:root {
+  /* Paleta de colores */
+  --mint-green: #3BB9A5;
+  --deep-teal: #2C7873;
+  --warm-orange: #F4A03B;
+  --coral-red: #EF4F3E;
+  --lemon-yellow: #FAD84A;
+  --violet: #7C3A89;
+  --soft-black: #1B1B1B;
+  --white: #FFFFFF;
+}
+
 .App {
   text-align: center;
 }

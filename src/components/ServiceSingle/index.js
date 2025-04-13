@@ -15,7 +15,7 @@ const ServiceSingle = (props) => {
                         <div className="service-single-content">
                            <Description/>
                            <WhyChoose/>
-                           <Categorys/>
+                           {/* <Categorys/> */}
                         </div>
                     </div>
                     <Sidebar/>
